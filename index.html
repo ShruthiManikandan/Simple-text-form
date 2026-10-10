@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Character Counter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="card">
+    <label for="message">Your message</label>
+    <p class="limit-note">200 characters max</p>
+
+    <textarea id="message" rows="6" placeholder="Type your message here..."></textarea>
+
+    <div class="counter-row">
+      <span id="counter">0/200 characters</span>
+      <span id="remaining">200 remaining</span>
+    </div>
+
+    <p id="warning" class="warning" role="alert" hidden>
+      Character limit reached. You can't type any more.
+    </p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
